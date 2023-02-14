@@ -1,0 +1,18 @@
+<!--
+<h1> <%= @post["author"]%> </h1>
+<h2> 
+    <img class="img-fluid" src="<%= @post["image"] %>" class="w-full">
+
+    <%= @post["body"] %>
+</h2>
+-->
+<div class="row" >
+    <div class="col-3">
+      <h1><%= @post["author"] %></h1>
+      <img class="img-fluid" src="<%= @post["image"] %>" class="w-full">
+      <p>
+         <%= @post["body"] %>
+      </p>
+    </div>
+</div>
+<p> <a href="/posts">Back to all Posts </a>

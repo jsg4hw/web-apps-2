@@ -3,7 +3,9 @@
     <div class="col-3">
       <h4><%= post["author"] %></h4>
       <img class="img-fluid" src="<%= post["image"] %>" class="w-full">
-      <p><%= post["body"] %></p>
+      <p>
+        <a href="/posts/<%=post["id"]%>"> <%= post["body"] %> </a>
+      </p>
     </div>
   <% end %>
 </div>
